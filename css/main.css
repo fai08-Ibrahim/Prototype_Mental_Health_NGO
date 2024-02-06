@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:wght@500&family=Roboto:ital,wght@1,500&display=swap');
+
+:root {
+  --delft-blue: #2B3A67;
+  --payne-gray: #496A81;
+  --moonstone: #66999B;
+  --sage: #B3AF8F;
+  --peach: #FFC482;
+  --border: 1px solid black;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0;
+  overflow-x: hidden;
+  font-size: 12px;
+}
+a{text-decoration: none; color: black;}
+a:hover{text-decoration: underline; color: red;}
+.options button:hover, #about button:hover{
+  color: var(--delft-blue); 
+  background-color: white; 
+  border: var(--border);
+  font-weight: bold;
+}
+#learn-more{
+  color:white;
+}
+#learn:hover a{color: black;}
+.overlay-bg button:hover{
+  font-weight: bold;
+  background-color: white; 
+  color: var(--peach);
+}
+
+i {
+  font-family: FontAwesome;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+.logo img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding-right: 5px;
+}
+button, a {
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: white;
+}
+
+h2 {
+  font-size: 2rem;
+  color: black;
+}
+
+section {
+  background-color: #EFEFEF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
+}
+
+.overlay-bg p{
+  margin:2rem 0 2rem 0;
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.overlay-bg {
+  position: relative;
+  height: calc(100dvh - 90px);
+  background-image: url("../images/main.jpg");
+  background-size: cover;
+}
+
+.objective {
+  position: absolute;
+  right: 12rem;
+  top: 8rem;
+}
+
+.overlay-dark-bg {
+  height: 100%;
+  width: 100%;
+  background-color: var(--delft-blue);
+  opacity: 0.3;
+}
+
+.header-wrapper {
+  max-width: 56rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.contacts{
+  height: 30px;
+  background-color: var(--delft-blue);
+  width: 100%;
+  font-size: small;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts i {
+  margin-right: 12px;
+}
+
+.contact-info > * {
+  margin-right: 12px;
+}
+
+.options-logo {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.options a{
+  border: none;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.options button, .overlay-bg button, #about button{
+  border-radius: 20px;
+  border: none;
+  background-color: var(--delft-blue);
+  color: white;
+  padding: 10px 20px 10px 20px;
+}
+
+.overlay-bg button{
+  background-color:  var(--peach);
+}
+
+/* About section style */
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 4rem 0 4rem;
+  gap: 0 6rem;
+}
+#about{
+  background-color: #FCF8F9;
+
+}
+.about div:first-child img {
+  max-width: 100%;
+}
+
+.about-par {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.about-par p {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.about p:nth-child(3){
+  color: gray;
+}
+
+/* <---------------- Footer's styling ------------->  */
+
+footer{
+  background-color: #14224d;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.2fr 2fr;
+  gap: 1rem 1rem;
+  color: white;
+  min-height: 60vh;
+}
+
+.NGO {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.NGO-wrapper, .navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 400px;
+  padding: 3rem;
+  row-gap: 1.5rem;
+}
+
+footer a{
+  color: white;
+  font-size: 1rem;
+}
+.navigation-links{
+  display: flex;
+  flex-direction: column;
+}
+
+footer input{
+  background-color: #14224d;
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 15px 20px;
+  width: 250px;
+  color: white;
+  font-size: large;
+}
+input[type="text"]::placeholder{
+  color: white;
+}
+#arrow{
+  position: absolute;
+  top: 2190px;
+  right: 105px;
+}
